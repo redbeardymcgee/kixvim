@@ -91,7 +91,7 @@ with final.pkgs.lib; let
 in {
   # This is the neovim derivation
   # returned by the overlay
-  nvim-pkg = mkNeovim {
+  kixvim = mkNeovim {
     plugins = all-plugins;
     inherit extraPackages;
   };
@@ -107,7 +107,7 @@ in {
   #
   # For example:
   #
-  # nvim-pkg-no-telescope = mkNeovim {
+  # kixvim-no-telescope = mkNeovim {
   #   plugins = [];
   #   ignoreConfigRegexes = [
   #     "^plugin/telescope.lua"
